@@ -8,8 +8,14 @@ const Layout: React.FC = () => {
       {/* Background overlay for better text contrast */}
       <div className="absolute inset-0 bg-yellow-900/20 z-0"></div>
       
-      {/* Watermark image */}
-      <div className="absolute inset-0 bg-[url('https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/789193e2-e119-4c42-a33e-0c08174e3e49-1000312939-removebg-preview.png')] bg-center bg-no-repeat bg-contain opacity-10 z-0 pointer-events-none"></div>
+      {/* Watermark logo at the top */}
+      <div className="w-full h-32 md:h-40 relative">
+        <img 
+          src="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/789193e2-e119-4c42-a33e-0c08174e3e49-1000312939-removebg-preview.png"
+          alt="Brand Watermark"
+          className="absolute top-0 left-1/2 -translate-x-1/2 h-full object-contain"
+        />
+      </div>
       
       {/* Content */}
       <main className="flex-grow flex items-center justify-center p-4 md:p-8 relative z-10">

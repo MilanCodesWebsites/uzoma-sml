@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.2 }}
             className="text-center md:text-left"
           >
-            This competition is hosted by UzomaSML and OC Imports.
+            This competition is hosted by UzomasML and OC Imports.
           </motion.p>
           
           <motion.div
